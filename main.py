@@ -8,9 +8,11 @@ def run_game():
 
     #setting screen size, icons, titles of the game
     screen=pygame.display.set_mode((1200,800))
-    icon=pygame.image.load('ufo.png')
+    icon=pygame.image.load('images/ufo.png')
+    player=pygame.image.load('images/ship.png')
     pygame.display.set_caption("Alien Invasion")
     pygame.display.set_icon(icon)
+
 
     #creating a loop for the game.
     run=True
@@ -21,4 +23,5 @@ def run_game():
                 run=False
         pygame.display.flip()
         screen.fill((0,0,0))
+        pygame.display.update()
 run_game()
